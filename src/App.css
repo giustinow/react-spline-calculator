@@ -84,7 +84,7 @@ input[type="number"] {
     color: white;
     border: 0;
     outline: 0;
-    width: 100%;
+    width: -webkit-fill-available;
   }
 }
 

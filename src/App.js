@@ -18,7 +18,12 @@ const keyValueMapping = {
 function App() {
   const [inputValue, setInputValue] = useState("");
 
-  const handleInputChange = ({ target: { id } }) => {
+  const handleInputChange = (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+    const {
+      target: { id },
+    } = event;
     if (!keyValueMapping[id]) return;
     setInputValue((element) => `${element}${keyValueMapping[id]}`);
   };
