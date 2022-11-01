@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -26,6 +29,63 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  font-size: 20px;
+}
+
+.input-element {
+  width: max-content;
+  background-color: #4e4e4e;
+  border-radius: 30px;
+  padding: 16px;
+  box-shadow: 5px 5px 17px -3px #1d1d1d;
+}
+
+.input-element input {
+  height: 48px;
+  border-radius: 20px;
+  background-color: #1d1d1d;
+  font-size: 20px;
+  padding: 16px;
+  border-color: none;
+  color: white;
+  border: 0;
+  outline: 0;
+  width: 25vw;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 786px) {
+  .input-element {
+    width: 100%;
+  }
+
+  .input-element input {
+    border-radius: 20px;
+    background-color: #1d1d1d;
+    font-size: 20px;
+    padding: 16px;
+    border-color: none;
+    color: white;
+    border: 0;
+    outline: 0;
+    width: 100%;
+  }
 }
 
 @keyframes App-logo-spin {
